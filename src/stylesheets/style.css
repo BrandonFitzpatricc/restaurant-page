@@ -99,4 +99,17 @@ header {
             place-self: center;
         }
     }
+
+    & .hours-and-location-section {
+        text-align: center;
+        color: white;
+        border: none white;
+        font-size: 64px;
+        padding: 100px 200px;
+
+        & .btn {
+            font-size: 32px;
+            margin-top: 30px;
+        }
+    }
 }
