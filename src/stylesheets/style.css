@@ -1,6 +1,7 @@
 body {
     font-family: "Averia Serif Libre", sans-serif;
     background-color: hsl(0, 0%, 18%);
+    min-width: 1275px;
 }
 
 header {
@@ -69,10 +70,15 @@ header {
 
     & .about-section {
         text-align: center;
-        padding: 50px 500px;
+        padding: 50px;
         color: white;
         border: none white;
         font-size: 32px;
+
+        & .text {
+            width: 900px;
+            margin: auto;
+        }
 
         & .text + div {
             margin-top: 30px;
@@ -83,11 +89,12 @@ header {
         background-color: white;
         border: none black;
         font-size: 32px;
-        padding: 50px 300px; 
+        padding: 50px;
         display: grid;
-        grid-template-columns: 1.5fr 1fr;
+        grid-template-columns: 700px 500px;
         grid-template-rows: repeat(2, 1fr);
         column-gap: 40px;
+        place-content: center;
 
         & .sub-photo {
             grid-row: 1 / -1;
@@ -105,7 +112,7 @@ header {
         color: white;
         border: none white;
         font-size: 64px;
-        padding: 100px 200px;
+        padding: 100px;
 
         & .btn {
             font-size: 32px;
