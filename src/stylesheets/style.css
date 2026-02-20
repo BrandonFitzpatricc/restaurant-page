@@ -1,3 +1,7 @@
+:root {
+    --black: hsl(0, 0%, 18%);
+}
+
 body {
     font-family: "Averia Serif Libre", sans-serif;
 }
@@ -35,6 +39,29 @@ header {
             background-color: inherit;
             font-size: 25px;
             text-wrap: nowrap;
+        }
+    }
+}
+
+& .content {
+
+    & .main-photo-container {
+        background-color: var(--black);
+
+        & .main-photo {
+            width: 1275px;
+            height: auto;
+            margin: auto;
+            position: relative;
+
+            & .main-photo-text {
+                color: white;
+                font-family: Agbalumo;
+                font-size: 64px;
+                position: absolute;
+                right: 200px;
+                top: 50px;
+            }
         }
     }
 }
