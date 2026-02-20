@@ -1,3 +1,40 @@
 body {
     font-family: "Averia Serif Libre", sans-serif;
 }
+
+header {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 125px;
+
+    & .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        & .logo-icon {
+            width: 100px;
+            height: auto;
+        }
+
+        & .logo-text {
+            font-family: Agbalumo;
+            font-size: 45px;
+        }
+    }
+
+    & nav .tabs {
+        padding: 15px;
+        display: flex;
+        gap: 50px;
+
+        & button {
+            border: none;
+            background-color: inherit;
+            font-size: 25px;
+            text-wrap: nowrap;
+        }
+    }
+}
