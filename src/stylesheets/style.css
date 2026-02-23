@@ -52,6 +52,21 @@ header {
         padding: 8px 70px;
     }
 
+    & .photo {
+        position: relative;
+
+         & .photo-credit {
+            font-size: 18px;
+            position: absolute;
+            justify-self: center;
+            bottom: 10px;
+
+            a:link, a:visited {
+                color: inherit;
+            }
+         }
+    }
+
     & .main-photo {
         width: 1275px;
         height: auto;
@@ -100,6 +115,10 @@ header {
             grid-row: 1 / -1;
             width: 700px;
             height: auto;
+
+            & .photo-credit {
+                color: white;
+            }
         }
 
         & .text, & .btn {
