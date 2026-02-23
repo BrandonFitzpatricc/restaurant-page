@@ -133,7 +133,7 @@ header {
         text-align: center;
         color: white;
         border: none white;
-        font-size: 64px;
+        font-size: 60px;
         padding: 100px;
 
         & .btn {
