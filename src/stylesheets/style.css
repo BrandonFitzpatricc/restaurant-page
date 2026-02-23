@@ -1,7 +1,6 @@
 body {
     font-family: "Averia Serif Libre", sans-serif;
-    background-color: hsl(0, 0%, 18%);
-    min-width: 1275px;
+    min-width: 1400px;
 
     & button {
         cursor: pointer;
@@ -14,7 +13,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 125px;
     position: sticky;
     top: 0px;
     z-index: 1;
@@ -36,11 +34,12 @@ header {
     }
 
     & nav .tabs {
+        list-style: none;
         padding: 15px;
         display: flex;
         gap: 50px;
 
-        & button {
+        & .tab {
             border: none;
             background-color: inherit;
             font-size: 25px;
@@ -50,16 +49,10 @@ header {
 }
 
 & .content {
-
-    & .btn > button {
-        background-color: inherit;
-        border-color: inherit;
-        border-style: solid;
-        color: inherit;
-        padding: 8px 70px;
-    }
+    background-color: hsl(0, 0%, 18%);
 
     & .photo {
+        height: auto;
         position: relative;
 
          & .photo-credit {
@@ -76,11 +69,16 @@ header {
 
     & .main-photo {
         width: 1275px;
-        height: auto;
         margin: auto;
-        position: relative;
+    }
 
-        & .photo-text {
+    & .text {
+        font-size: 32px;
+    }
+
+    &.homepage {
+
+        & .main-photo .photo-text {
             color: white;
             font-family: Agbalumo;
             font-size: 64px;
@@ -88,61 +86,68 @@ header {
             right: 200px;
             top: 50px;
         }
-    }
 
-    & .about-section {
-        text-align: center;
-        padding: 50px;
-        color: white;
-        border: none white;
-        font-size: 32px;
-
-        & .text {
-            width: 900px;
-            margin: auto;
+        & .section-btn > button {
+            background-color: inherit;
+            border-color: inherit;
+            border-style: solid;
+            color: inherit;
+            font-size: 32px;
+            padding: 8px 70px;
         }
 
-        & .text + div {
-            margin-top: 30px;
-        }
-    }
+        & .about-section {
+            text-align: center;
+            padding: 50px;
+            color: white;
+            border: none white;
 
-    & .menu-section {
-        background-color: white;
-        border: none black;
-        font-size: 32px;
-        padding: 50px;
-        display: grid;
-        grid-template-columns: 700px 500px;
-        grid-template-rows: repeat(2, 1fr);
-        column-gap: 40px;
-        place-content: center;
+            & .text {
+                width: 900px;
+                margin: auto;
+            }
 
-        & .sub-photo {
-            grid-row: 1 / -1;
-            width: 700px;
-            height: auto;
-
-            & .photo-credit {
-                color: white;
+            & .text + div {
+                margin-top: 30px;
             }
         }
 
-        & .text, & .btn {
-            place-self: center;
+        & .menu-section {
+            background-color: white;
+            border: none black;
+            padding: 50px;
+            display: grid;
+            grid-template-columns: 700px 500px;
+            grid-template-rows: repeat(2, 1fr);
+            column-gap: 40px;
+            place-content: center;
+
+            & .section-photo {
+                grid-row: 1 / -1;
+
+                & .photo-credit {
+                    color: white;
+                }
+            }
+
+            & .text {
+                place-self: center;
+            }
         }
-    }
 
-    & .hours-and-location-section {
-        text-align: center;
-        color: white;
-        border: none white;
-        font-size: 60px;
-        padding: 100px;
+        & .hours-and-location-section {
+            text-align: center;
+            color: white;
+            border: none white;
+            padding: 100px;
 
-        & .btn {
-            font-size: 32px;
-            margin-top: 30px;
+            & .text {
+                font-size: 50px;
+            }
+
+            & .section-btn {
+                margin-top: 30px;
+            }
         }
     }
 }
