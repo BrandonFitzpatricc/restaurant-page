@@ -221,4 +221,47 @@ header {
             }
         }
     }
+
+    &.about-page {
+
+        & .our-story-section {
+            background-color: white;
+            text-align: center;
+            padding: 15px 0 40px 0;
+
+            & .text {
+                width: 550px;
+                margin: auto;
+            }
+
+            & div + .text {
+                margin-top: 25px;
+            }
+        }
+
+        & .meet-the-owner-section {
+            background-color: hsl(0, 0%, 95%);
+            padding: 25px 0 50px 0;
+            display: grid;
+            grid-template-columns: 700px 600px;
+            place-content: center;
+            place-items: center;
+            gap: 30px;
+
+            & .heading {
+                grid-column: 1 / -1;
+            }
+
+            & .section-photo {
+                grid-row: 2 / 4;
+            }
+        }
+
+        & .closing-text {
+            background-color: white;
+            text-align: center;
+            font-size: 45px;
+            padding: 30px;
+        }
+    }
 }
