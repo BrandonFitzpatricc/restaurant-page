@@ -56,6 +56,7 @@ header {
         position: relative;
 
          & .photo-credit {
+            color: white;
             font-size: 18px;
             position: absolute;
             justify-self: center;
@@ -80,7 +81,7 @@ header {
         }
 
         &.larger {
-            font-size: 64px;
+            font-size: 56px;
         }
     }
 
@@ -90,13 +91,21 @@ header {
 
     &.homepage {
 
-        & .main-photo .photo-text {
-            color: white;
-            font-family: Agbalumo;
-            font-size: 64px;
-            position: absolute;
-            right: 200px;
-            top: 50px;
+        & .main-photo {
+
+            & .photo-text {
+                color: white;
+                font-family: Agbalumo;
+                font-size: 64px;
+                position: absolute;
+                right: 200px;
+                top: 50px;
+            }
+
+            & .photo-credit {
+                color: black;
+            }
+
         }
 
         & .section-btn > button {
@@ -136,10 +145,6 @@ header {
 
             & .section-photo {
                 grid-row: 1 / -1;
-
-                & .photo-credit {
-                    color: white;
-                }
             }
 
             & .text {
@@ -165,10 +170,6 @@ header {
 
     &.hours-and-location-page {
 
-        & .main-photo .photo-credit {
-            color: white;
-        }
-
         & .page-info {
             background-color: white;
             text-align: center;
@@ -176,6 +177,47 @@ header {
 
             & div + .text {
                 margin-top: 25px;
+            }
+        }
+    }
+
+    &.menu-page {
+
+        & .page-info {
+            background-color: white;
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            & .heading.larger {
+                grid-column: 1 / -1;
+                border-bottom: 1px solid black;
+                padding: 15px;
+            }
+
+            & .appetizers {
+                border-right: 1px solid black;
+            }
+
+            & .menu-section {
+                padding: 10px 0 40px 0;
+
+                & .menu-item {
+                    width: 425px;
+                    margin: auto;
+
+                    & .item-name {
+                        font-size: 28px;
+                    }
+
+                    & .item-description {
+                        font-size: 20px;
+                    }
+                }
+
+                & .menu-item {
+                    margin-top: 18px;
+                }
             }
         }
     }
