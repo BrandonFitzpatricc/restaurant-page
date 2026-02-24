@@ -72,8 +72,20 @@ header {
         margin: auto;
     }
 
+    & .heading {
+        font-weight: bold;
+
+        &.smaller {
+            font-size: 42px;
+        }
+
+        &.larger {
+            font-size: 64px;
+        }
+    }
+
     & .text {
-        font-size: 32px;
+        font-size: 28px;
     }
 
     &.homepage {
@@ -92,7 +104,7 @@ header {
             border-color: inherit;
             border-style: solid;
             color: inherit;
-            font-size: 32px;
+            font-size: 28px;
             padding: 8px 70px;
         }
 
@@ -103,7 +115,7 @@ header {
             border: none white;
 
             & .text {
-                width: 900px;
+                width: 800px;
                 margin: auto;
             }
 
@@ -142,11 +154,28 @@ header {
             padding: 100px;
 
             & .text {
-                font-size: 50px;
+                font-size: 45px;
             }
 
             & .section-btn {
                 margin-top: 30px;
+            }
+        }
+    }
+
+    &.hours-and-location-page {
+
+        & .main-photo .photo-credit {
+            color: white;
+        }
+
+        & .page-info {
+            background-color: white;
+            text-align: center;
+            padding: 25px 0 35px 0;
+
+            & div + .text {
+                margin-top: 25px;
             }
         }
     }
