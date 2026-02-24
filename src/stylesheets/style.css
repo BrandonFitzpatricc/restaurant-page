@@ -199,24 +199,24 @@ header {
                 border-right: 1px solid black;
             }
 
-            & .menu-section {
+            & .appetizers, .entrees {
                 padding: 10px 0 40px 0;
 
-                & .menu-item {
-                    width: 425px;
-                    margin: auto;
+                & .menu-items {
+                    padding: 0;
 
-                    & .item-name {
-                        font-size: 28px;
+                    & .menu-item {
+                        width: 425px;
+                        margin: 18px auto auto auto;
+
+                        & .item-name {
+                            font-size: 28px;
+                        }
+
+                        & .item-description {
+                            font-size: 20px;
+                        }
                     }
-
-                    & .item-description {
-                        font-size: 20px;
-                    }
-                }
-
-                & .menu-item {
-                    margin-top: 18px;
                 }
             }
         }
