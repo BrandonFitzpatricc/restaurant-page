@@ -1,4 +1,6 @@
 import "../stylesheets/custom-reset.css";
 import "../stylesheets/style.css";
 
-console.log("hello");
+import { loadHomepage } from "./home.js";
+
+loadHomepage();
