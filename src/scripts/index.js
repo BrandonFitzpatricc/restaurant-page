@@ -11,6 +11,9 @@ loadHomepage();
 document.querySelector(".home").addEventListener("click", () => {
     loadHomepage();
 
+    // When you return to the homepage from a different page, the section buttons
+    // will be loaded back in from scratch, meaning that the event listeners that
+    // make them function need to be reapplied.
     document.querySelector(".section-btn > .about")
             .addEventListener("click", loadAboutPage);
 
