@@ -63,11 +63,11 @@ const loadHomepage = () => {
                                                  'Photo by <a href="https://unsplash.com/@eddie2oh?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Edward Franklin</a> on <a href="https://unsplash.com/photos/burger-and-fries-on-plate-Nb_Q-M3Cdzg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>',
                                                  new Attribute("class", "photo-credit"));
 
+    menuSectionPhotoContainer.append(menuSectionPhoto, menuSectionPhotoCredit);   
+
     const menuSectionText = createElement("div", 
                                           `A moderate variety of food that will make you say "I've had better,but that's not bad!"`,
                                           new Attribute("class", "text"));
-
-    menuSectionPhotoContainer.append(menuSectionPhoto, menuSectionPhotoCredit);     
 
     const menuBtnContainer = createElement("div", "", 
                                            new Attribute("class", "section-btn"));
