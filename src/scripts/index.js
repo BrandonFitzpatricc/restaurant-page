@@ -2,5 +2,6 @@ import "../stylesheets/custom-reset.css";
 import "../stylesheets/style.css";
 
 import { loadHomepage } from "./home.js";
+import { loadHoursAndLocationPage } from "./hours-and-location.js";
 
-loadHomepage();
+loadHoursAndLocationPage();

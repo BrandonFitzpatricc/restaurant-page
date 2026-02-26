@@ -1,7 +1,7 @@
-import { createElement, Attribute } from "./element-factory.js"
+import { createElement, Attribute } from "./element-factory.js";
 
-import restaurantInterior from "../photos/restaurant-interior.jpg"
-import burger from "../photos/burger.jpg"
+import restaurantInterior from "../photos/restaurant-interior.jpg";
+import burger from "../photos/burger.jpg";
 
 const loadHomepage = () => {
     const content = document.querySelector("#content");
