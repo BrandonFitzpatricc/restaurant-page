@@ -1,0 +1,3 @@
+# restaurant-page
+
+This is a website that was created primarily using JavaScript to dynamically generate its content through the DOM. It contains several pages, all of which are loaded through functions provided by ES6 modules, and bundled together with an HTML template and CSS stylesheets through the use of Webpack. It demonstrates proficient use of CSS in addition to various modern JavaScript technologies.
