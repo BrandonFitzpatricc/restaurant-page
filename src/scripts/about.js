@@ -4,7 +4,10 @@ import flatbread from "../photos/flatbread.jpg";
 import owner from "../photos/owner.jpg";
 
 const loadAboutPage = () => {
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+
     const content = document.querySelector("#content");
+    content.textContent = "";
 
     const mainPhotoContainer = createElement("div", "", 
                                              new Attribute("class", "photo main-photo"));

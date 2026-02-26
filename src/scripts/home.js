@@ -4,7 +4,10 @@ import restaurantInterior from "../photos/restaurant-interior.jpg";
 import burger from "../photos/burger.jpg";
 
 const loadHomepage = () => {
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+
     const content = document.querySelector("#content");
+    content.textContent = "";
 
     const mainPhotoContainer = createElement("div", "", 
                                              new Attribute("class", "photo main-photo"));
@@ -87,7 +90,7 @@ const loadHomepage = () => {
 
     const hoursAndLocationBtn = createElement("button", 
                                               "Hours & Location", 
-                                              new Attribute("class", "menu"));
+                                              new Attribute("class", "hours-and-location"));
 
     hoursAndLocationBtnContainer.appendChild(hoursAndLocationBtn);
     

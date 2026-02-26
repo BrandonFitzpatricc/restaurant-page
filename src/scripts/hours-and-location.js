@@ -3,7 +3,10 @@ import { createElement, Attribute } from "./element-factory.js";
 import restaurantBuilding from "../photos/restaurant-building.jpg";
 
 const loadHoursAndLocationPage = () => {
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+
     const content = document.querySelector("#content");
+    content.textContent = "";
 
     const mainPhotoContainer = createElement("div", "", 
                                              new Attribute("class", "photo main-photo"));
