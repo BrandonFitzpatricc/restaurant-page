@@ -42,6 +42,7 @@ const loadHomepage = () => {
     const aboutBtn = createElement("button", "Learn More", new Attribute("class", "about"));
 
     aboutBtnContainer.appendChild(aboutBtn);
+
     aboutSection.append(aboutSectionText[0], aboutSectionText[1], aboutBtnContainer);
 
     const menuSection = createElement("div", "", new Attribute("class", "menu-section"));
@@ -63,13 +64,15 @@ const loadHomepage = () => {
                                           `A moderate variety of food that will make you say "I've had better,but that's not bad!"`,
                                           new Attribute("class", "text"));
 
+    menuSectionPhotoContainer.append(menuSectionPhoto, menuSectionPhotoCredit);     
+
     const menuBtnContainer = createElement("div", "", 
                                            new Attribute("class", "section-btn"));
 
     const menuBtn = createElement("button", "View Menu", new Attribute("class", "menu"));
 
-    menuSectionPhotoContainer.append(menuSectionPhoto, menuSectionPhotoCredit);
     menuBtnContainer.appendChild(menuBtn);
+
     menuSection.append(menuSectionPhotoContainer, menuSectionText, menuBtnContainer);
 
     const hoursAndLocationSection = createElement("div", "", 
@@ -87,10 +90,11 @@ const loadHomepage = () => {
                                               new Attribute("class", "menu"));
 
     hoursAndLocationBtnContainer.appendChild(hoursAndLocationBtn);
+    
     hoursAndLocationSection.append(hoursAndLocationSectionText, hoursAndLocationBtnContainer);
 
     content.className = "content homepage";
     content.append(mainPhotoContainer, aboutSection, menuSection, hoursAndLocationSection);
 }
 
-export{ loadHomepage };
+export { loadHomepage };

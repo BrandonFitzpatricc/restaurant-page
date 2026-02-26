@@ -43,4 +43,4 @@ const loadHoursAndLocationPage = () => {
     content.append(mainPhotoContainer, pageInfo);
 }
 
-export{ loadHoursAndLocationPage };
+export { loadHoursAndLocationPage };

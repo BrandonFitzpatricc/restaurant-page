@@ -3,5 +3,6 @@ import "../stylesheets/style.css";
 
 import { loadHomepage } from "./home.js";
 import { loadHoursAndLocationPage } from "./hours-and-location.js";
+import { loadMenuPage } from "./menu.js";
 
-loadHoursAndLocationPage();
+loadMenuPage();
